@@ -1,0 +1,19 @@
+menu "WiFi CSI Configuration"
+
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "AC204"
+        help
+            WiFi router SSID to connect to.
+
+    config ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default "ac666666"
+        help
+            WiFi router password.
+
+    config ESP_WIFI_STA_ENABLED
+        bool "Enable WiFi Station"
+        default y
+
+endmenu
